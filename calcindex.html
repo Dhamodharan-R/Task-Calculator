@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcstyle.css">
+    
+</head>
+<body>
+    <div class="container css-selector">
+        <div class="table1">
+            <table class="table" >
+                <tr>
+                    <td colspan="5"><input type="text" id="display" value=""/></td>
+                </tr>
+                <tr>
+                    <td><button onclick="mc()" style="background-color: rgb(6, 240, 18);">MC</button></td>
+                    <td><button onclick="mr()" style="background-color: rgb(6, 240, 18);">MR</button></td>
+                    <td><button onclick="ms()" style="background-color: rgb(6, 240, 18);">MS</button></td>
+                    <td><button onclick="mplus()" style="background-color: rgb(6, 240, 18);">M+</button></td>
+                    <td><button onclick="mminus()" style="background-color: rgb(6, 240, 18);">M-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="del()" style="background-color: red;">&#8592;</button></td>
+                    <td><button onclick="del()" style="background-color: red;">CE</button></td>
+                    <td><button onclick="send('')" style="background-color: red;">C</button></td>
+                    <td><button onclick="send('+-')">&#177;</button></td>
+                    <td><button onclick="send('root')">&#8730;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="send(7)">7</button></td>
+                    <td><button onclick="send(8)">8</button></td>
+                    <td><button onclick="send(9)">9</button></td>
+                    <td><button onclick="send('/')">/</button></td>
+                    <td><button onclick="send('%')">%</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="send(4)">4</button></td>
+                    <td><button onclick="send(5)">5</button></td>
+                    <td><button onclick="send(6)">6</button></td>
+                    <td><button onclick="send('*')">*</button></td>
+                    <td><button onclick="send('1/x')">1/x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="send(1)">1</button></td>
+                    <td><button onclick="send(2)">2</button></td>
+                    <td><button onclick="send(3)">3</button></td>
+                    <td><button onclick="send('-')">-</button></td>
+                    <td rowspan="2"><button onclick="send('=')" id="equal" style="background-color: rgb(68, 0, 255);">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="send(0)" style="width: 100%;" >0</button></td>
+                    <td><button onclick="send('.')">.</button></td>
+                    <td><button onclick="send('+')">+</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="calcscript.js"></script>
+</body>
+</html>
